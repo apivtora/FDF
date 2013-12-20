@@ -5,7 +5,7 @@
 ## Login   <chapui_s@epitech.net>
 ## 
 ## Started on  Sun Dec  8 23:22:02 2013 chapui_s
-## Last update Sun Dec  8 23:22:18 2013 chapui_s
+## Last update Fri Dec 20 23:59:36 2013 Sebastien Chapuis
 ##
 
 SRC	= main.c \
@@ -32,8 +32,7 @@ OBJ	= $(SRC:.c=.o)
 
 all:	$(NAME)
 
-$(NAME):
-	gcc -c $(SRC) -O3
+$(NAME):	$(OBJ)
 	gcc $(OBJ) -o $(NAME) $(CFLAGS)
 
 clean:
